@@ -21,10 +21,12 @@ public class Ejemplo032 {
         // TODO code application logic here
         Scanner entrada = new Scanner(System.in);
         entrada.useLocale(Locale.US);
-        int limite = 5;
+        int limite ;
         int contador = 1;
         int suma = 0;
         int valor_ingresado;
+        System.out.println("Ingrese el limite:");
+        limite = entrada.nextInt();
 
         while (contador <= limite) {
             System.out.println("Ingrese el valor a sumar");
