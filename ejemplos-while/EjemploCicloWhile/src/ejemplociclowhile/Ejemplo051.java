@@ -26,23 +26,22 @@ public class Ejemplo051 {
         int limite = 3;
         int contador = 1;
         double suma_total = 0;
-        String cadenafinal = "Nombre del estudiante: ";
         String nombre;
         String apellido;
 
         double promedio_final;
         double calificacion;
         
+        String cadenafinal = "Las notas ingresadas son:\n";
         
         System.out.println("Ingrese su Nombre");
         nombre = entrada.nextLine();
-        cadenafinal = String.format("%s%s", cadenafinal,nombre);
+        cadenafinal = String.format("\n%sEL nombre del estudiante es:%s\n", cadenafinal,nombre);
         System.out.println("Ingrese su Apellido");
         apellido = entrada.nextLine();
-        cadenafinal = String.format("%s %s\n",cadenafinal,apellido);
+        cadenafinal = String.format("\n%sEl apellido del estudiante es:%s\n",cadenafinal,apellido);
         System.out.println("Ingrese las notas de los estudiantes de su "
                 + "materia");
-        cadenafinal = String.format("%s\nLas notas ingresadas son:\n", cadenafinal);
 
         while (contador <= limite) {
             System.out.printf("Ingrese calificación "
